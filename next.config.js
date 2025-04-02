@@ -1,11 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    images: {
-      unoptimized: true,
-    },
-    trailingSlash: true,
-    basePath: '', // Leave empty since this is your username.github.io repo
+    basePath: '/JPM2002.github.io',
+    assetPrefix: '/JPM2002.github.io/',
   };
   
   module.exports = nextConfig;
