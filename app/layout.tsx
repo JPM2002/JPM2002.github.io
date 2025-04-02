@@ -13,7 +13,6 @@ const orbitron = Orbitron({
 export const metadata: Metadata = {
   title: "Javier Pozo Miranda | Portfolio",
   description: "AI Engineer • ML Developer • CS @ Penn State",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -24,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${orbitron.variable} font-orbitron bg-[#0d0d0d] text-white`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} themes={["dark", "orange"]}>
+        <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem={false} themes={["dark", "orange"]}>
           {children}
         </ThemeProvider>
       </body>
@@ -32,6 +31,3 @@ export default function RootLayout({
   )
 }
 
-
-
-import './globals.css'

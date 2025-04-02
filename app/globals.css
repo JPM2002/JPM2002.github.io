@@ -13,6 +13,10 @@
   --accent: #ff8c00;
 }
 
+html[data-theme="orange"] {
+  --accent: #ff8c00;
+}
+
 @layer base {
   body {
     background-color: #0d0d0d;
